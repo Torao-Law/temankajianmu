@@ -15,10 +15,12 @@ const LandingPage = () => {
 
   return (
     <div className={`h-full dark:bg-black transition-all duration-500`}>
-      <Navbar />
-      
-      <div className="flex ps-20 mb-24" style={{height: "75vh"}}>
-        <div className="flex-1 mt-20">
+      <div className="z-50">
+        <Navbar />
+      </div>
+
+      <div className="flex px-10 md:ps-20 mb-24 landingpageWrapper" style={{height: "75vh"}}>
+        <div className="flex-1 md:mt-20 leftContent">
           <h1 className={`${theme === 'light' ? 'text-blueColor': 'text-greenColor'} text-5xl font-bold leading-tight transition-all duration-500`}>
             Bersama Menyusuri Ilmu dan Hikmah Al-Quran & Sunnah
           </h1>
@@ -27,12 +29,15 @@ const LandingPage = () => {
             <span className="font-semibold">(HR. Tirmidzi)</span>
           </p>
 
-          <button className={`${theme === 'light' ? 'bg-orangeColor': 'bg-orangeColor'} mt-14 px-8 py-2 rounded font-bold transition-all duration-500`}>
+          <button  
+            className={`${theme === 'light' ? 'bg-orangeColor' : 'bg-orangeColor'} mt-14 px-8 py-2 rounded font-bold transition-all duration-500`}
+            onClick={() => window.location.href = "https://chat.whatsapp.com/GwvtrVjR0GK6SVPkdC7a39"}
+          >
             Join Grub
           </button>
         </div>
         
-        <div className="relative flex-1">
+        <div className="relative flex-1 rightContent">
           <img 
             src={theme === 'light' ? ImgMosque : ImgLightDark} 
             alt="Image Hero" 

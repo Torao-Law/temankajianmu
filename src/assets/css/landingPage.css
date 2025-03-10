@@ -1,0 +1,49 @@
+@media (max-width: 640px) {
+  .landingpageWrapper {
+    display: flex;
+    flex-direction: column;
+    height: auto !important;
+  }
+
+  .leftContent {
+    margin-top: 24px
+  }
+
+  .leftContent h1 {
+    font-size: 32px;
+  }
+
+  .leftContent p {
+    -webkit-text-stroke: 1px "#52525B";
+  }
+
+  .rightContent {
+    position: absolute;
+    height: 50%
+  }
+
+  .rightContent img {
+    filter: blur(5px);
+    mask-image: none;
+    opacity: 0.5;
+  }
+
+  /* INFORMATION SECTION */
+  .informationWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .informationLeft {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .informationLeft img {
+    width: 100%
+  }
+
+  .informationRight {
+    text-align: center;
+  }
+}

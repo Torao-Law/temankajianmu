@@ -5,8 +5,8 @@ const InformationSection = ({ title, subtitle, image, text, link, textLink }) =>
   const { theme } = useTheme()
 
   return (
-    <div className={`dark:bg-black flex justify-center items-center px-28`}>
-      <div className="flex-1 ">
+    <div className={`dark:bg-black flex justify-center items-center px-10 md:px-28 informationWrapper`}>
+      <div className="flex-1 informationLeft">
         <img 
           src={image} 
           alt="image information" 
@@ -14,7 +14,7 @@ const InformationSection = ({ title, subtitle, image, text, link, textLink }) =>
         />
       </div>
 
-      <div className="flex-1 flex flex-col gap-4">
+      <div className="flex-1 flex flex-col gap-4 informationRight">
         <p 
           className={`${theme === 'light' ? 'text-orangeColor' : 'text-orangeColor'} leading-tight transition-all duration-500`}
         >
