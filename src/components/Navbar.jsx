@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between items-center px-6 md:px-20 py-4 bg-transparent">
       <div className="flex gap-2 items-center">
-        <div className="h-14 w-14">
+        <div className="h-14 w-14 imgWrapper">
           <img
             className="w-full h-full"
             src={theme === "light" ? ImgLogoBlue : ImgLogoWhite}
@@ -61,7 +61,7 @@ const Navbar = () => {
       </div>
 
 
-      <div className={`flex gap-8 ${theme === 'light' ? "text-blueColor" : "text-white"}`}>
+      <div className={`flex gap-8 navbarRight ${theme === 'light' ? "text-blueColor" : "text-white"}`}>
         <button onClick={toggleTheme} className="text-3xl lg:text-xl">
           <i className={`fa-solid fa-${theme === "light" ? "sun" : "moon"}`}></i>
         </button>

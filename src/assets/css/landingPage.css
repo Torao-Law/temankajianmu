@@ -47,3 +47,14 @@
     text-align: center;
   }
 }
+
+
+@media (max-width: 375px) {
+  .informationRight h1 {
+    font-size: 28px;
+  }
+
+  .informationRight {
+    font-size: 14px;
+  }
+}
